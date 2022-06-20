@@ -69,6 +69,16 @@ app.get("/clear", async(req,res) => {
   res.status(200).send()
 })
 
+app.get("/list", async(req,res) => {
+
+  let w = []
+  fs.readdirSync('uploads').forEach(file => {
+    w.push(file.toString())
+  });
+  res.status(200).send(w)
+
+})
+
 
 
 
