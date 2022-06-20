@@ -59,14 +59,14 @@ app.post("/addDomain/:domainName",loginService.addDomain);
 app.get("/getAllOrganizations",loginService.getAllOrganizations);
 app.post("/uploadFile",upload.array('myFile', 3) , async(req, res) =>{
   if (res.error === undefined){
-    return res.status(200).send()
+    return res.status(200).send({ msg: "File Uploaded" })
   }else{
-    return res.status(500).send()
+    return res.status(500).send({ msg: "Couldn't upload." })
   }  
 });
 app.get("/clear", async(req,res) => {
   fsExtra.emptyDirSync('uploads')
-  res.status(200).send()
+  res.status(200).send({ msg: "Folder cleared " })
 })
 
 app.get("/list", async(req,res) => {
