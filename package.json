@@ -1,7 +1,7 @@
 {
-  "name": "caleta-onedrive-sharepoint-server",
+  "name": "test-caleta-server",
   "version": "1.0.0",
-  "description": "Caleta OneDrive & Sharepoint Server",
+  "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -11,19 +11,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CaletaSolutions/Caleta-OneDrive-Sharepoint-Server.git"
+    "url": "git+https://github.com/buuzuu/test-caleta-server.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CaletaSolutions/Caleta-OneDrive-Sharepoint-Server/issues"
+    "url": "https://github.com/buuzuu/test-caleta-server/issues"
   },
-  "homepage": "https://github.com/CaletaSolutions/Caleta-OneDrive-Sharepoint-Server#readme",
+  "homepage": "https://github.com/buuzuu/test-caleta-server#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "axios": "^0.22.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
     "fs-extra": "^10.1.0",
     "mongoose": "^6.1.7",
     "multer": "^1.4.5-lts.1",
